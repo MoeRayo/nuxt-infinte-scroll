@@ -1,9 +1,7 @@
 <template>
   <div>
-    <navigation />
+    <GalleryHeader />
+    <Gallery />
   </div>
 </template>
 
-<script>
-export default {}
-</script>
