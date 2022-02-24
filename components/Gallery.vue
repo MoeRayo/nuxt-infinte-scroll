@@ -9,7 +9,7 @@
           <dd class="ml0 gray">{{image.user.name}}</dd>
         </dl>
       </a>
-      <Observer @intersect="intersected"/>
+      <Observer @intersect="imageIntersected"/>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
     page: 1
   }),
   methods: {
-    intersected() {
+    imageIntersected() {
       axios
         .get(
           `https://api.unsplash.com/photos?page=${this.page}&per_page=10&w=1280&h=1280`,
